@@ -1,0 +1,386 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Shivanshu 🤍</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Trebuchet MS", sans-serif;
+  color: #795367;
+  background: linear-gradient(145deg,#fff8fb,#ffe8f0,#fff5ee);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  overflow-x: hidden;
+}
+
+.card {
+  width: 100%;
+  max-width: 570px;
+  padding: 30px 23px;
+  text-align: center;
+  background: rgba(255,255,255,.85);
+  border: 1px solid #f4d4e1;
+  border-radius: 27px;
+  box-shadow: 0 15px 50px #d59ab522;
+  position: relative;
+  z-index: 1;
+}
+
+h1, h2 {
+  font-family: Georgia, serif;
+  color: #a65f80;
+  line-height: 1.3;
+}
+
+h1 { font-size: clamp(30px,8vw,43px); }
+h2 { font-size: clamp(25px,6vw,33px); }
+
+p { line-height: 1.85; font-size: 15px; }
+
+.emoji { font-size: 57px; margin: 8px; }
+
+.label {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #cb83a1;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+button {
+  border: none;
+  border-radius: 30px;
+  padding: 13px 20px;
+  margin: 7px 3px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.primary {
+  background: linear-gradient(135deg,#e8a3bd,#d781a4);
+  color: white;
+  box-shadow: 0 6px 15px #d781a433;
+}
+
+.secondary {
+  background: #fff0f6;
+  color: #a65f80;
+  border: 1px solid #f1d3e0;
+}
+
+button:active { transform: scale(.97); }
+
+.screen { animation: appear .5s ease; }
+.hidden { display: none; }
+
+.letter {
+  text-align: left;
+  background: #fff9fb;
+  border: 1px solid #f5dce6;
+  border-radius: 18px;
+  padding: 18px;
+  max-height: 48vh;
+  overflow-y: auto;
+}
+
+.letter p { margin: 0 0 13px; }
+
+.signoff {
+  color: #b76c8b;
+  font-weight: bold;
+}
+
+.footer {
+  margin-top: 23px;
+  padding-top: 15px;
+  border-top: 1px solid #f5dce6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 11px;
+  color: #b18a9c;
+}
+
+#music {
+  background: #fff0f6;
+  color: #a65f80;
+  border: 1px solid #f1d3e0;
+  padding: 9px 12px;
+  margin: 0;
+  font-size: 11px;
+}
+
+.floating {
+  position: fixed;
+  top: -30px;
+  pointer-events: none;
+  animation: fall 4s linear forwards;
+  z-index: 3;
+}
+
+.sparkle {
+  position: fixed;
+  color: #d98eaa;
+  pointer-events: none;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes appear {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  50% { transform: translateY(-15px) rotate(10deg); }
+}
+
+@keyframes fall {
+  to { transform: translateY(110vh) rotate(600deg); opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<span class="sparkle" style="top:10%;left:8%">♡</span>
+<span class="sparkle" style="top:20%;right:9%">✧</span>
+<span class="sparkle" style="bottom:15%;left:7%">✦</span>
+<span class="sparkle" style="bottom:12%;right:8%">♡</span>
+
+<main class="card">
+
+  <section id="welcome" class="screen">
+    <div class="emoji">💌</div>
+    <div class="label">A little birthday surprise</div>
+    <h1>Hey Shivanshu! 🤍</h1>
+    <p>
+      Someone has a little something for you! 🌷<br>
+      A tiny surprise made with good wishes,
+      random craziness, and a little appreciation. 😂
+    </p>
+    <button class="primary" onclick="show('letter')">
+      Open your surprise ✨
+    </button>
+    <p style="font-size:12px;color:#b18a9c">
+      P.S. Don't get too excited. Okay, maybe a little. 😭
+    </p>
+  </section>
+
+  <section id="letter" class="screen hidden">
+    <div class="emoji">🌷</div>
+    <div class="label">A little note from me to you</div>
+    <h2>Happy Birthday, Shivanshu! 🎂</h2>
+
+    <article class="letter">
+      <p>Hey Shivanshu!! 🫶🏻</p>
+
+      <p>
+        It's kinda funny how someone you've known for just
+        two months can become someone you share such a nice
+        bond with. I guess sometimes, it doesn't take years
+        to connect with someone; just a few conversations,
+        random craziness, and the right energy are enough. 😂✨
+      </p>
+
+      <p>
+        I'm genuinely glad we crossed paths, and I hope this
+        friendship keeps growing, stays genuine, and gives us
+        plenty more random moments to laugh about. May your
+        birthday bring you lots of happiness, success, peace,
+        and all the little things that make life beautiful.
+        You deserve good things, so keep being you! 🤍
+      </p>
+
+      <p>
+        And don't let this birthday wish make you too proud,
+        okay? You're still annoying sometimes. 😭😂
+      </p>
+
+      <p>
+        Stay happy, keep growing, and never lose the little
+        things that make you YOU. Here's to more conversations,
+        more laughter, and more memories ahead! ✨
+      </p>
+
+      <p class="signoff">
+        — A little appreciation from someone who's genuinely
+        glad to know you. 🫶🏻
+      </p>
+    </article>
+
+    <button class="secondary" onclick="show('welcome')">
+      ← Back
+    </button>
+    <button class="primary" onclick="show('wishes')">
+      One last thing… 💗
+    </button>
+  </section>
+
+  <section id="wishes" class="screen hidden">
+    <div class="emoji">🎂</div>
+    <div class="label">A wish just for you</div>
+    <h2>A new year of YOU! ✨</h2>
+
+    <p>
+      I hope this year brings you reasons to laugh on ordinary
+      days, people who make you feel appreciated, courage for
+      the hard days, and plenty of moments worth remembering.
+      Keep being your lovely, slightly annoying self. 😂🤍
+    </p>
+
+    <h2 style="font-size:23px">
+      Happy Birthday once again! 🥳
+    </h2>
+
+    <button class="secondary" onclick="show('letter')">
+      ← Read the note again
+    </button>
+    <button class="primary" onclick="celebrate()">
+      Celebrate! 🎉
+    </button>
+  </section>
+
+  <section id="final" class="screen hidden">
+    <div class="emoji">🎉</div>
+    <div class="label">Surprise complete</div>
+    <h2>Now smile, birthday boy! 😂❤️</h2>
+    <p>
+      Sending you lots of happiness, good energy,
+      and the warmest birthday wishes. 🤍
+    </p>
+    <p>
+      May your day be as amazing as you pretend to be. 😭😂
+    </p>
+    <div class="emoji">🤍✨🌸✨🤍</div>
+    <button class="primary" onclick="show('welcome')">
+      Replay the surprise ↻
+    </button>
+  </section>
+
+  <div class="footer">
+    <span>Made for Shivanshu, with 🤍</span>
+    <button id="music" onclick="toggleMusic()">♫ Play music</button>
+  </div>
+
+</main>
+
+<script>
+function show(id) {
+  document.querySelectorAll('.screen').forEach(section => {
+    section.classList.add('hidden');
+  });
+
+  document.getElementById(id).classList.remove('hidden');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function celebrate() {
+  show('final');
+
+  const symbols = ['♡','✦','✧','🌸','💗','✨'];
+
+  for (let i = 0; i < 45; i++) {
+    const item = document.createElement('span');
+    item.className = 'floating';
+    item.textContent = symbols[
+      Math.floor(Math.random() * symbols.length)
+    ];
+
+    item.style.left = Math.random() * 100 + 'vw';
+    item.style.fontSize = (14 + Math.random() * 17) + 'px';
+    item.style.animationDuration = (2 + Math.random() * 3) + 's';
+
+    document.body.appendChild(item);
+    setTimeout(() => item.remove(), 5200);
+  }
+}
+
+/* Original little melody — no external music file needed */
+let audio;
+let musicTimer;
+let musicPlaying = false;
+let noteNumber = 0;
+
+const melody = [
+  523.25, 659.25, 783.99, 659.25,
+  587.33, 698.46, 783.99, 698.46
+];
+
+function playMelody() {
+  if (!musicPlaying || !audio) return;
+
+  for (let i = 0; i < 4; i++) {
+    const oscillator = audio.createOscillator();
+    const volume = audio.createGain();
+    const start = audio.currentTime + i * 0.43;
+
+    oscillator.type = 'sine';
+    oscillator.frequency.value =
+      melody[noteNumber % melody.length];
+
+    volume.gain.setValueAtTime(0.0001, start);
+    volume.gain.exponentialRampToValueAtTime(0.06, start + 0.04);
+    volume.gain.exponentialRampToValueAtTime(0.0001, start + 0.4);
+
+    oscillator.connect(volume);
+    volume.connect(audio.destination);
+
+    oscillator.start(start);
+    oscillator.stop(start + 0.42);
+
+    noteNumber++;
+  }
+}
+
+async function toggleMusic() {
+  const button = document.getElementById('music');
+
+  if (musicPlaying) {
+    musicPlaying = false;
+    clearInterval(musicTimer);
+    button.textContent = '♫ Play music';
+    return;
+  }
+
+  try {
+    const AudioContextClass =
+      window.AudioContext || window.webkitAudioContext;
+
+    if (!AudioContextClass) {
+      alert('Music is not supported by this browser.');
+      return;
+    }
+
+    if (!audio) audio = new AudioContextClass();
+    await audio.resume();
+
+    musicPlaying = true;
+    button.textContent = '♫ Pause music';
+    playMelody();
+    musicTimer = setInterval(playMelody, 1900);
+  } catch (error) {
+    alert('Could not start music. Please try again.');
+  }
+}
+</script>
+
+</body>
+</html>
