@@ -382,5 +382,74 @@ async function toggleMusic() {
 }
 </script>
 
+<!-- Birthday Friendship Song -->
+<div class="music-card">
+  <p>🎧 A little song for you, Shivanshu 🤍</p>
+  <button id="musicButton" onclick="toggleMusic()">
+    🎵 Play our friendship song
+  </button>
+
+  <div id="musicPlayer" style="display: none; margin-top: 15px;">
+    <iframe
+      id="songFrame"
+      width="100%"
+      height="180"
+      src="https://www.youtube-nocookie.com/embed/4JNtAtGGNRU?autoplay=1"
+      title="Count on Me - Bruno Mars"
+      frameborder="0"
+      allow="autoplay; encrypted-media; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>
+
+<style>
+.music-card {
+  margin: 25px auto;
+  padding: 20px;
+  max-width: 350px;
+  text-align: center;
+  background: #fff0f5;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px #ffb6c144;
+  font-family: Arial, sans-serif;
+}
+
+.music-card p {
+  color: #a64d79;
+  font-size: 17px;
+}
+
+.music-card button {
+  background: #ff8fab;
+  color: white;
+  border: none;
+  padding: 13px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.music-card button:hover {
+  background: #fb6f92;
+}
+</style>
+
+<script>
+function toggleMusic() {
+  const player = document.getElementById("musicPlayer");
+  const button = document.getElementById("musicButton");
+
+  if (player.style.display === "none") {
+    player.style.display = "block";
+    button.textContent = "💗 Enjoy the song";
+  } else {
+    player.style.display = "none";
+    document.getElementById("songFrame").src = "";
+    button.textContent = "🎵 Play our friendship song";
+  }
+}
+</script>
+
 </body>
 </html>
