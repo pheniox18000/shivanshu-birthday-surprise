@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Birthday Shivanshu 🤍</title>
+<title>Happy Birthday Shiwanshu 🤍</title>
 
 <style>
 * { box-sizing: border-box; }
@@ -170,7 +170,7 @@ button:active { transform: scale(.97); }
   <section id="welcome" class="screen">
     <div class="emoji">💌</div>
     <div class="label">A little birthday surprise</div>
-    <h1>Hey Shivanshu! 🤍</h1>
+    <h1>Hey Shiwanshu! 🤍</h1>
     <p>
       Someone has a little something for you! 🌷<br>
       A tiny surprise made with good wishes,
@@ -187,10 +187,10 @@ button:active { transform: scale(.97); }
   <section id="letter" class="screen hidden">
     <div class="emoji">🌷</div>
     <div class="label">A little note from me to you</div>
-    <h2>Happy Birthday, Shivanshu! 🎂</h2>
+    <h2>Happy Birthday, Shiwanshu! 🎂</h2>
 
     <article class="letter">
-      <p>Hey Shivanshu!! 🫶🏻</p>
+      <p>Hey Shiwanshu!! 🫶🏻</p>
 
       <p>
         It's kinda funny how someone you've known for just
@@ -276,7 +276,7 @@ button:active { transform: scale(.97); }
   </section>
 
   <div class="footer">
-    <span>Made for Shivanshu, with 🤍</span>
+    <span>Made for Shiwanshu, with 🤍</span>
     <button id="music" onclick="toggleMusic()">♫ Play music</button>
   </div>
 
@@ -350,36 +350,29 @@ function playMelody() {
   }
 }
 
+const birthdaySong = new Audio(
+  "13%29Bruno%20Mars%20-%20Count%20on%20Me%203.17.mp3"
+);
+
+birthdaySong.loop = true;
+
 async function toggleMusic() {
-  const button = document.getElementById('music');
+  const button = document.getElementById("music");
 
-  if (musicPlaying) {
-    musicPlaying = false;
-    clearInterval(musicTimer);
-    button.textContent = '♫ Play music';
-    return;
-  }
-
-  try {
-    const AudioContextClass =
-      window.AudioContext || window.webkitAudioContext;
-
-    if (!AudioContextClass) {
-      alert('Music is not supported by this browser.');
-      return;
+  if (birthdaySong.paused) {
+    try {
+      await birthdaySong.play();
+      button.textContent = "♫ Pause music";
+    } catch (error) {
+      alert("Could not play the song. Please check the MP3 filename.");
     }
-
-    if (!audio) audio = new AudioContextClass();
-    await audio.resume();
-
-    musicPlaying = true;
-    button.textContent = '♫ Pause music';
-    playMelody();
-    musicTimer = setInterval(playMelody, 1900);
-  } catch (error) {
-    alert('Could not start music. Please try again.');
+  } else {
+    birthdaySong.pause();
+    button.textContent = "♫ Play music";
   }
 }
+
+
 </script>
 
 
